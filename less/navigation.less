@@ -1,0 +1,65 @@
+//NAVIGATION
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    img {
+        @media @mobile{
+            width: 50%;
+            height: 50%;
+            
+        }
+    }
+    
+    .navbar {
+        width: 60%;
+        display:flex;
+        justify-content: center;
+        @media @mobile {
+            width: 30%;
+        }
+        a{
+            font-size: 2rem;
+            color:red;
+            display:flex;
+            align-items: center;
+            padding-left: 4%;
+            padding-right: 4%;
+            @media @tablet {
+                font-size: 1.2rem;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+            @media @mobile {
+                font-size: 1.5rem;
+                padding-left: 6%;
+                padding-right: 6%;
+                padding-bottom: 20%;
+            }
+
+        }
+    }
+    .free-signup {
+        button {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: skyblue;
+            height:95%;
+            width:100%;
+            color: white;
+            font-size: 3rem;
+            border: none;
+            @media @mobile {
+                width: 100%;
+                margin-bottom: 20%;
+            }
+        }
+    }
+}
